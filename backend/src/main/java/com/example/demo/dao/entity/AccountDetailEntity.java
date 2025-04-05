@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity(name = "account_details")
-public class AccountDetailBalanceEntity {
+public class AccountDetailEntity {
 
   @Id
   @Column(name = "account_id", length = 50)
