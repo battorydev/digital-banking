@@ -5,34 +5,35 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import java.math.BigDecimal;
 
-@Entity
+@Entity(name = "account_balance")
 public class AccountBalanceEntity {
 
   @Id
-  @Column(name = "account_id")
-  private Long accountId;
+  @Column(name = "account_id", length = 50)
+  private String accountId;
 
-  @Column(name = "user_id")
-  private Long userId;
+  @Column(name = "user_id", length = 50)
+  private String userId;
 
+  @Column(name = "amount", scale = 2 , precision = 15)
   private BigDecimal amount;
 
   @Column(name = "dummy_col_4")
-  private Long dummy_col_4;
+  private Long dummyCol4;
 
-  public Long getAccountId() {
+  public String getAccountId() {
     return accountId;
   }
 
-  public void setAccountId(Long accountId) {
+  public void setAccountId(String accountId) {
     this.accountId = accountId;
   }
 
-  public Long getUserId() {
+  public String getUserId() {
     return userId;
   }
 
-  public void setUserId(Long userId) {
+  public void setUserId(String userId) {
     this.userId = userId;
   }
 
@@ -44,11 +45,11 @@ public class AccountBalanceEntity {
     this.amount = amount;
   }
 
-  public Long getDummy_col_4() {
-    return dummy_col_4;
+  public Long getDummyCol4() {
+    return dummyCol4;
   }
 
-  public void setDummy_col_4(Long dummy_col_4) {
-    this.dummy_col_4 = dummy_col_4;
+  public void setDummyCol4(Long dummyCol4) {
+    this.dummyCol4 = dummyCol4;
   }
 }
