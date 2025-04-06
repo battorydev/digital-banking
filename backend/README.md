@@ -10,3 +10,8 @@ CREATE DATABASE springboot CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ./mock_data/init_mock_data.sh
 ```
 3. 
+
+
+# Swagger UI
+http://localhost:8080/swagger-ui/index.html
+
