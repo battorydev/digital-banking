@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "cfc8207e-1b7e-4214-9fb9-d9d209534d05",
+		"name": "Sample API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users/greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/greeting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
