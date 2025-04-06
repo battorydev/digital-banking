@@ -9,9 +9,17 @@ CREATE DATABASE springboot CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```shell
 ./mock_data/init_mock_data.sh
 ```
-3. 
 
 
 # Swagger UI
 http://localhost:8080/swagger-ui/index.html
 
+
+# Deployment
+```shell
+docker build -t digital-banking .
+```
+
+```shell
+docker-compose up
+```
