@@ -4,7 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity(name = "debit_card")
+@Entity(name = "debit_cards")
 public class DebitCardEntity {
 
   @Id

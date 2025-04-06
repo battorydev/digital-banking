@@ -5,7 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import java.sql.Timestamp;
 
-@Entity(name = "account_flag")
+@Entity(name = "account_flags")
 public class AccountFlagEntity {
 
   @Id

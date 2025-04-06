@@ -4,7 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity(name = "banner")
+@Entity(name = "banners")
 public class BannerEntity {
 
   @Id
