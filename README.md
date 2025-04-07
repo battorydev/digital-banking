@@ -2,15 +2,18 @@
 # Setting up database
 1. Open terminal (bash) 
 2. Run `docker-compose up`
-3. Create a new database in your mysql server called `springboot`:
+3. `docker exec -it digital-banking-db-1 mysql -uroot -ppassword`
+4. Create a new database in your mysql server called `springboot`:
 ```sql
 CREATE DATABASE springboot CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 ```
-4. Initial schema and mock data:
+5. Open new terminal
+6. Copy from mock_data directory to `mock_data/`
+7. Initial schema and mock data:
 ```shell
 ./mock_data/init_mock_data.sh
 ```
-5. Stop all containers:
+8. Stop all containers:
 ```shell
 docker-compose down
 ```
