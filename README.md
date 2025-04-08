@@ -38,4 +38,4 @@ This will run all the tests in the project and generate a test report.
 You can check code coverage report (jacoco) in `build/reports/jacoco/test/html/index.html`
 
 If the code coverage is 0%, you might need to run `docker-compose up` again to start the database container.  
-Then run `./gradlew clean test` again to generate the code coverage report.
+Then run `./gradlew clean test -Ptest` again to generate the code coverage report.

@@ -9,17 +9,19 @@ import com.example.demo.dao.entity.AccountBalanceEntity;
 import java.math.BigDecimal;
 import java.util.Optional;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
+@ActiveProfiles("test")
 @SpringBootTest
 public class AccountBalanceServiceTest {
 
-  @Mock
+  @MockitoBean
   private AccountBalanceRepository accountBalanceRepository;
 
-  @InjectMocks
+  @Autowired
   private AccountBalanceService accountBalanceService;
 
   @Test
