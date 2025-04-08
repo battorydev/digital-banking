@@ -30,7 +30,10 @@ docker-compose up
 ## Swagger UI
 http://localhost:8080/swagger-ui/index.html
 
-# Testing the application
+## Postman Collection
+`postman_collection.json`
+
+# Automated testing
 ```shell
 ./gradlew clean test
 ```
