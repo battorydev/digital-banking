@@ -8,6 +8,6 @@ public class AccountInfoController {
 
   @GetMapping("/account/info")
   public String getAccountInfo() {
-    return "accountInfo";
+    throw new RuntimeException("Account info not available");
   }
 }

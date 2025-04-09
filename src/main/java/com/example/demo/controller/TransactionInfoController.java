@@ -8,6 +8,6 @@ public class TransactionInfoController {
 
   @GetMapping("/transaction/info")
   public String getTransactionInfo() {
-    return "transactionInfo";
+    throw new RuntimeException("Transaction info not available");
   }
 }
