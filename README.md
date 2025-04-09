@@ -6,6 +6,7 @@
 - Postman collection
 - Automated testing (JUnit)
 - Code Coverage report (Jacoco)
+- Performance testing (JMeter)
 - GitHub Actions
 - Docker Compose
 
@@ -72,6 +73,8 @@ You can check code coverage report (jacoco) in `build/reports/jacoco/test/html/i
 If the code coverage is 0%, you may need to run `docker-compose up` again to start the database container.  
 Then run `./gradlew clean test -Ptest` again to generate the code coverage report.
 
+## Performance testing
+Open `src/test/resources/load_test.jmx` in JMeter and run the test.
 
 ## Database Tables
 ```mermaid
