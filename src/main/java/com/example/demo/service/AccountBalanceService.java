@@ -28,4 +28,11 @@ public class AccountBalanceService {
 
     return accountBalanceEntity.getAmount();
   }
+
+  public BigDecimal getBalance(String testUser) {
+
+    log.info("Fetching total balance...");
+
+    return accountBalanceRepository.getBalance(testUser);
+  }
 }
