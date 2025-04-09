@@ -27,7 +27,12 @@ docker build -t digital-banking .
 docker-compose up
 ```
 
+## Test User
+username=user1 
+password=password
+
 ## Swagger UI
+Login to the application and navigate to the following URL to access the Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
 ## Postman Collection
