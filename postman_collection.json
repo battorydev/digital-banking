@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "cfc8207e-1b7e-4214-9fb9-d9d209534d05",
-		"name": "Sample API",
+		"name": "Fintech_Assignment",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/users/greeting",
+					"raw": "http://localhost:8080/users/greeting?user=000018b0e1a211ef95a30242ac180002",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -20,6 +20,38 @@
 					"path": [
 						"users",
 						"greeting"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "000018b0e1a211ef95a30242ac180002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaction/info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/greeting?user=000018b0e1a211ef95a30242ac180002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"greeting"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "000018b0e1a211ef95a30242ac180002"
+						}
 					]
 				}
 			},
@@ -30,7 +62,58 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/accounts/balance?user=fffff95ee1a111ef95a30242ac180002&account=0000016ce1a211ef95a30242ac180002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"balance"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "fffff95ee1a111ef95a30242ac180002"
+						},
+						{
+							"key": "account",
+							"value": "0000016ce1a211ef95a30242ac180002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users/{userId}/balance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/balance?user=fffff95ee1a111ef95a30242ac180002&account=0000016ce1a211ef95a30242ac180002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"balance"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "fffff95ee1a111ef95a30242ac180002"
+						},
+						{
+							"key": "account",
+							"value": "0000016ce1a211ef95a30242ac180002"
+						}
+					]
+				}
 			},
 			"response": []
 		}
