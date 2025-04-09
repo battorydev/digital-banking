@@ -1,5 +1,16 @@
+# Digital Banking API
 
-# Setting up database
+## Key Features
+- Authentication
+- Swagger UI
+- Postman collection
+- Automated testing (JUnit)
+- Code Coverage report (Jacoco)
+- GitHub Actions
+- Docker Compose
+
+
+## Setting up database
 1. Open terminal (bash) 
 2. Run `docker-compose up`
 3. `docker exec -it digital-banking-db-1 mysql -uroot -ppassword`
@@ -18,7 +29,7 @@ CREATE DATABASE springboot CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 docker-compose down
 ```
 
-# Running the application
+## Running the application
 ```shell
 docker build -t digital-banking .
 ```
@@ -27,18 +38,18 @@ docker build -t digital-banking .
 docker-compose up
 ```
 
-## Test User
+### Test User
 username=user1 
 password=password
 
-## Swagger UI
+### Swagger UI
 Login to the application and navigate to the following URL to access the Swagger UI:
 http://localhost:8080/swagger-ui/index.html
 
-## Postman Collection
+### Postman Collection
 `postman_collection.json`
 
-# Automated testing
+## Automated testing
 ```shell
 ./gradlew clean test
 ```
@@ -50,7 +61,7 @@ If the code coverage is 0%, you might need to run `docker-compose up` again to s
 Then run `./gradlew clean test -Ptest` again to generate the code coverage report.
 
 
-# Database Tables
+## Database Tables
 ```mermaid
 erDiagram
     users {
